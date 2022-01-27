@@ -1,0 +1,389 @@
+/*                  settings                    */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+a {
+    opacity: 0.8
+}
+
+a:hover {
+    opacity: 1
+}
+
+
+/* #67533f dark brown
+#fefdfb creamy
+
+90/36/28/20 */
+
+* {
+    transition: 0.2s ease
+}
+
+body {
+    margin: 0;
+    font-family: Lato, serif;
+    background: #fefdfb
+}
+
+#home {
+    position: absolute;
+    top: 0
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: 0;
+    color: #67533f;
+    background-color: #fefdfb;
+}
+
+h2 {
+    font-size: 32px;
+    color: #67533f;
+    text-align: center;
+    padding: 60px;
+}
+
+h2:before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 80px;
+    background: #67533f;
+    position: relative;
+    right: 20px;
+    margin-bottom: 10px
+}
+
+h2:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 80px;
+    background: #67533f;
+    position: relative;
+    left: 20px;
+    margin-bottom: 10px
+}
+
+h3 {
+    text-align: center
+}
+
+
+/*                      header and navigation                   */
+
+nav {
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    margin: 0px;
+    background: #67533f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99
+}
+
+nav img {
+    height: 80px;
+    float: left;
+}
+
+nav li {
+    display: inline;
+    padding-right: 1.1em;
+    float: left;
+}
+
+nav li:first-child {
+    margin-right: 40px
+}
+
+nav li a {
+    text-decoration: none;
+    text-align: center;
+    color: #fefdfb;
+}
+
+nav li a:hover {
+    border-bottom: 1px solid #fefdfb
+}
+
+.toTheRightPlease {
+    position: absolute;
+    right: 30px
+}
+
+
+/*                  welcome                     */
+
+.cinematography {
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/47672847810259.58863b7ed2435.gif);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+.cinematography h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #fefdfb;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+
+/*            about               */
+
+.about {
+    display: flex;
+    height: 24vw
+}
+
+.aboutpic {
+    width: 50vw;
+    height: 24vw
+}
+
+.aboutpic img {
+    width: 50vw
+}
+
+.description {
+    display: flex;
+    width: 50%;
+}
+
+.description p {
+    padding: 50px;
+    margin: 0px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+.description p span {
+    display: inline-block;
+    margin: 22% 50px 50px 50px;
+    transform: translateY(-50%);
+}
+
+
+/*                  coffee menu                     */
+
+.coffeetypes {
+    display: flex;
+    justify-content: center;
+}
+
+.coffeetypes ul {
+    list-style-type: none;
+    display: inline-block
+}
+
+.coffee1 li,
+.coffee2 li {
+    background-color: #67533f;
+    color: #fefdfb;
+    padding: 10px;
+    margin: 10px;
+    width: 220px;
+    font-weight: 300
+}
+
+.coffee1 ul li span,
+.coffee2 ul li span {
+    float: right;
+    font-weight: 400
+}
+
+.coffee1 ul li span:before,
+.coffee2 ul li span:before {
+    content: "kr. "
+}
+
+
+/*                  coffee beans                     */
+
+.coffeebeans ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 50px;
+    -webkit-padding-start: 0;
+}
+
+.coffeebeans ul #left {
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    font-size: 3em;
+    vertical-align: bottom; 
+}
+
+.coffeebeans ul #right {
+    display: inline-block;
+    position: relative;
+    right: 10%;
+    font-size: 3em;
+    vertical-align: bottom;
+}
+
+.coffeebeans ul li {
+    display: inline-block;
+    width: 15%;
+}
+
+.coffeebeans ul li img {
+    height: 100px;
+    margin-bottom: 20px
+}
+
+.coffeebeans li a {
+    text-decoration: none;
+    text-align: center;
+    color: #67533f;
+}
+
+#flexiselDemo1 li span {
+    display: block;
+    font-size: small;
+    margin-top: 4px
+}
+
+
+/*                  contact                     */
+
+.contactcontent {
+    display: flex;
+    justify-content: center;
+}
+
+.findus {
+    width: 30%;
+    text-align: right;
+    margin-right: 30px;
+    line-height: 1.6em;
+}
+
+.findus a {
+    color: #67533f;
+    text-decoration: none
+}
+
+.map {
+    width: 70%;
+}
+
+iframe {
+    height: 280px;
+    border: 0px!important;
+    float: right;
+    width: 60vw;
+    border: 0px!important;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: -260px;
+}
+
+
+/*                  footer                     */
+
+footer {
+    margin-top: 100px;
+    background-color: #67533f;
+    color: #fefdfb;
+    padding: 30px;
+}
+
+footer article {
+    text-align: center
+}
+
+footer article section {
+    width: 20%;
+    display: inline-block;
+    text-align: left
+}
+
+footer p {
+    margin: 0px!important;
+    font-size: small;
+    padding: 15px
+}
+
+footer section.social img {
+    height: 40px;
+    margin: 10px
+}
+
+footer section.social {
+    text-align: center
+}
+
+
+/*                  bean page                     */
+
+.beanpic {
+    background: url(../img/costarica.jpg);
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50vw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.beantext {
+    margin-top: 200px;
+    flex-direction: column;
+    margin-left: 50vw
+}
+
+.beantext h1 {
+    font-size: 2em
+}
+
+.beantext h2 {
+    font-size: 1.6em
+}
+
+.beantext h2:after,
+.beantext h2:before {
+    display: none
+}
+
+.beantext h1,
+.beantext h2,
+.beantext p {
+    display: block;
+    width: 100%;
+    margin-left: 10%;
+    width: 70%;
+    text-align: left;
+    padding: 0px
+}
+
+.light {
+    font-weight: 300
+}
